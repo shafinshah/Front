@@ -1,4 +1,4 @@
-import Avatar from "@mui/material/Avatar";
+
 import Link from "@mui/material/Link";
 import Login from "./Login";
 import { useNavigate } from 'react-router-dom';
@@ -48,7 +48,7 @@ navigate("/Login")
    </div>) :(
     <div style={{display:"flex"}}>
        
-    <a href="/Dashboard" ><Avatar /> </a>
+    <a href="/Dashboard" >profile </a>
   
   
   
