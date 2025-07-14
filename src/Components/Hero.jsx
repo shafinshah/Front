@@ -55,7 +55,7 @@ return <Course course={course} key={1}/>
               
              }
            
-                 <a href="/Courses"> <Button color="secondary">Show All Courses</Button> </a> 
+                 <a href="/Courses"> <button color="secondary">Show All Courses</button> </a> 
                     </div>
   
 
