@@ -1,5 +1,5 @@
 import Myimage from "../assets/smile-png.webp"
-import Autocomplete from '@mui/material/Autocomplete';
+
 
 import { useState } from "react";
 import Course from "./Course" 
