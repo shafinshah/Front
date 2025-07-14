@@ -1,7 +1,7 @@
 
 import './App.css'
 import React from 'react';
-import '@fontsource/roboto/700.css';
+
 import Hero from './Components/Hero';
 import CoursesTab from './Components/CoursesTab';
 import Navbar from './Components/Navbar';
