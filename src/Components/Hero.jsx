@@ -5,7 +5,7 @@ import { useState } from "react";
 import Course from "./Course" 
 import axios from 'axios';
 import { useEffect } from "react";
-import Button from '@mui/material/Button';
+
 
 export default function Hero(){
     const[courses, setCourses]= useState([]);
