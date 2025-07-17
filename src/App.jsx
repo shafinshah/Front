@@ -7,7 +7,7 @@ import CoursesTab from './Components/CoursesTab';
 import Navbar from './Components/Navbar';
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
-import { createBrowserRouter, Route, RouterProvider, Routes} from 'react-router-dom';
+import { createBrowserRouter, Route, RouterProvider, Routes, Router} from 'react-router-dom';
 
 import Dashboard from './Components/Dashboard';
 import NewCourse from './Components/newCourse';
@@ -58,7 +58,15 @@ function App() {
   return(
       
     <>
-   <RouterProvider router={router}/>
+<Router>
+  <Routes>
+    <Route path='/' element={<><Navbar /><Hero /> <Footer /></> } />
+      <Route path='/Courses' element={<><Navbar /><CoursesTab /><Footer /></> } />
+      <Route path='/login' element={<><Navbar /><Login /></> } />
+      <Route path='/Singup' element={<><Navbar /><SignUp /></> } />
+    
+  </Routes>
+</Router>
     </>
   )
 }
