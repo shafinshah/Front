@@ -44,7 +44,7 @@ navigate("/Login")
         !user ? (
         <div className="Login">
       <a href="/login"><button type="button" className="btn btn-primary">Login</button> </a>
-     <a href="/Signup"> <button type="button"  className="btn btn-danger">SignUp</button></a> 
+     <a href="/Singup"> <button type="button"  className="btn btn-danger">SignUp</button></a> 
    </div>) :(
     <div style={{display:"flex"}}>
        
