@@ -60,8 +60,8 @@ function App() {
     <>
 <BrowserRouter>
   <Routes>
-    <Route path='/k' element={<><Navbar /><Hero /> <Footer /></> } />
-      <Route path='/' element={<><Navbar /><CoursesTab /><Footer /></> } />
+    <Route path='/' element={<><Navbar /><Hero /> <Footer /></> } />
+      <Route path='/Courses' element={<><Navbar /><CoursesTab /><Footer /></> } />
       <Route path='/login' element={<><Navbar /><Login /></> } />
       <Route path='/Singup' element={<><Navbar /><SignUp /></> } />
     
