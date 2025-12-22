@@ -2,7 +2,7 @@
 import Link from "@mui/material/Link";
 import Login from "./Login";
 import { useNavigate } from 'react-router-dom';
-
+import { Link } from 'react-router-dom';
 
 export default function Navbar(){
 const navigate= useNavigate();
@@ -44,6 +44,7 @@ navigate("/Login")
         !user ? (
         <div className="Login">
       <a href="/Login"><button type="button" className="btn btn-primary">Login</button> </a>
+         <Link to="/Login">LOGIN</Link>
      <a href="/Signup"> <button type="button"  className="btn btn-danger">SignUp</button></a> 
    </div>) :(
     <div style={{display:"flex"}}>
