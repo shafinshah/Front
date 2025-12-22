@@ -14,7 +14,7 @@ const[courses, setCourses]= useState([]);
 useEffect(()=>{
 const Email = sessionStorage.getItem("token");
 
-  axios.get(`https://learning2-5nk4.onrender.com/Courses/${id}`)
+  axios.get(`https://e-learning-backend-db0v.onrender.com/Courses/${id}`)
   .then(courses =>
   setCourses(courses.data))
   .catch(err =>
@@ -23,7 +23,7 @@ const Email = sessionStorage.getItem("token");
 },)
 
 const handelDelet=()=>{
-      axios.delete(`https://learning2-5nk4.onrender.com/Courses/${id}`)
+      axios.delete(`https://e-learning-backend-db0v.onrender.com/Courses/${id}`)
  .then(result =>{
 console.log(result)
 if(result.data === "Success"){
@@ -43,7 +43,7 @@ console.log(err);
 let handelEnroll = ()=>{
  const Email = sessionStorage.getItem("token");
  console.log(Email);
-  axios.post("https://learning2-5nk4.onrender.com/Enroll",{id,Email})
+  axios.post("https://e-learning-backend-db0v.onrender.com/Enroll",{id,Email})
   navigate("/Dashboard")
 }
  const Email = sessionStorage.getItem("token");
