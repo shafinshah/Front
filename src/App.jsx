@@ -58,16 +58,7 @@ function App() {
   return(
       
     <>
-<BrowserRouter>
-  <Routes>
-    <Route path='/' element={<><Navbar /><Hero /> <Footer /></> } />
-      <Route path='/Courses' element={<><Navbar /><CoursesTab /><Footer /></> } />
-      <Route path='/login' element={<><Navbar /><Login /></> } />
-      <Route path='/Singup' element={<><Navbar /><SignUp /></> } />
-    
-  </Routes>
-
-</BrowserRouter>
+<RouterProvider router={router} />
     </>
   )
 }
