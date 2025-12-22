@@ -23,11 +23,11 @@ const router = createBrowserRouter([
   },
  
   {
-    path: "https://front-rz8x.onrender.com/Courses",
+    path: "/Courses",
     element: <><Navbar /><CoursesTab /><Footer /></>
   },
   {
-    path: "/login",
+    path: "/Login",
     element: <><Navbar /><Login /></>
   },
   {
