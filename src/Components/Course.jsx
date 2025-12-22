@@ -13,7 +13,7 @@ export default function Course({course}){
 
 
   return (
-    <a href={`/Course/${course._id}`}>
+    <a href={`/Courses/${course._id}`}>
     <div className="Course">
   
     <Card sx={{width:340}}>
