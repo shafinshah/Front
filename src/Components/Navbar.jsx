@@ -33,22 +33,22 @@ navigate("/Login")
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
         </li>
         <li className="nav-item">
-         <a href="/Courses">Courses</a>
+         <Link to="/Courses">Courses</Link>
         </li>
      </ul>
       {
         !user ? (
         <div className="Login">
-      <a href="/Login"><button type="button" className="btn btn-primary">Login</button> </a>
-         <Link to="/Login">LOGIN</Link>
-     <a href="/Signup"> <button type="button"  className="btn btn-danger">SignUp</button></a> 
+      <Link to="/Login"><button type="button" className="btn btn-primary">Login</button> </Link>
+     
+     <Link to="/Signup"> <button type="button"  className="btn btn-danger">SignUp</button></Link> 
    </div>) :(
     <div style={{display:"flex"}}>
        
-    <a href="/Dashboard" >profile </a>
+    <Link to="/Dashboard" >profile </Link>
   
   
   
