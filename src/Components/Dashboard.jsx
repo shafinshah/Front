@@ -15,7 +15,7 @@ const[courses,setCourses] = useState([])
  const Email = sessionStorage.getItem("token");
 
  console.log("email:"+Email);
-  axios.get(`https://learning2-5nk4.onrender.com/user/${Email}`)
+  axios.get(`https://e-learning-backend-db0v.onrender.com/user/${Email}`)
   .then((users) => {
     setUser(users.data)
 
@@ -29,7 +29,7 @@ const[courses,setCourses] = useState([])
 
 useEffect(()=>{
 
-   axios.get('https://learning2-5nk4.onrender.com/Courses')
+   axios.get('https://e-learning-backend-db0v.onrender.com/Courses')
 .then(courses =>
   setCourses(courses.data))
   .catch(err =>
