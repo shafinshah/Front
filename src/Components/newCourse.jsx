@@ -29,7 +29,7 @@ let {title,description,price,imageUrl,keyFeatures} = formData;
         let owner = sessionStorage.getItem("token");
 
    
-     axios.post('https://learning2-5nk4.onrender.com/newCourses',{title,description ,price,imageUrl,keyFeatures,owner})
+     axios.post('https://e-learning-backend-db0v.onrender.com/newCourses',{title,description ,price,imageUrl,keyFeatures,owner})
 
  .then(result =>{
 console.log(result)
