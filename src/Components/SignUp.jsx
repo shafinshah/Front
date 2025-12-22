@@ -31,7 +31,7 @@ Instructor:'',
 const Instructor = formData.Instructor?formData.Instructor:false;
 
     console.log(Instructor);
-     axios.post('https://learning2-5nk4.onrender.com/Signup',{username, email , password,Instructor})
+     axios.post('https://e-learning-backend-db0v.onrender.com/Signup',{username, email , password,Instructor})
 
  .then(result =>{
 console.log(result)
