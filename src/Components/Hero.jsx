@@ -14,7 +14,7 @@ export default function Hero(){
 
 useEffect(()=>{
 
-   axios.get('https://learning2-5nk4.onrender.com/Courses')
+   axios.get('https://e-learning-backend-db0v.onrender.com/Courses')
 .then(courses =>
   setCourses(courses.data))
   .catch(err =>
