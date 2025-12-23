@@ -9,7 +9,7 @@ const navigate= useNavigate();
 
 const handelSubmit =()=>{
  
-sessionStorage.removeItem("token");
+localStorage.removeItem("token");
 
 navigate("/Login")
 
@@ -48,7 +48,7 @@ navigate("/Login")
    </div>) :(
     <div style={{display:"flex"}}>
        
-    <Link to="/Dashboard" >profile </Link>
+    <Link to="/Dashboard" ><p>Profile</p> </Link>
   
   
   
