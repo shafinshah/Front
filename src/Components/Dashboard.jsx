@@ -12,7 +12,7 @@ const[courses,setCourses] = useState([])
 
     useEffect(()=>{
       
- const Email = sessionStorage.getItem("token");
+ const Email = localStorage.getItem("token");
 
  console.log("email:"+Email);
   axios.get(`https://e-learning-backend-db0v.onrender.com/user/${Email}`)
