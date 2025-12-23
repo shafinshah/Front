@@ -11,6 +11,7 @@ const handelSubmit =()=>{
  
 localStorage.removeItem("token");
 
+sessionStorage.removeItem("token");
 navigate("/Login")
 
 }
@@ -19,7 +20,7 @@ navigate("/Login")
 
 
 
-   const user = localStorage.getItem("token");
+   const user = sessionStorage.getItem("token");
 
  
     return (
