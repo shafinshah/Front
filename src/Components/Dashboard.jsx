@@ -2,7 +2,8 @@
 import { useEffect, useState } from "react";
 import Course from "./Course";
 import axios from 'axios';
-import profileImg from "../assets/profile.png"
+import profileImg from "../assets/profile.png";
+import { Link } from "react-router-dom";
 
 export default function Dashboard(){
 const[user,setUser]= useState([]);
@@ -54,7 +55,7 @@ useEffect(()=>{
             
                          
                 {
-            user.Instructor ? <div><p>Role: Instructor</p> <a href="/Create"> <button >Create New Course</button> </a></div>
+            user.Instructor ? <div><p>Role: Instructor</p> <Link to="/Create"> <button >Create New Course</button> </Link></div>
        : <p>Role: Student</p> 
     
             }
