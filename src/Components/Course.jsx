@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
+import { Link } from "react-router-dom";
 
 export default function Course({course}){
  
@@ -13,7 +13,7 @@ export default function Course({course}){
 
 
   return (
-    <a href={`/Courses/${course._id}`}>
+    <Link to={`/Courses/${course._id}`}>
     <div className="Course">
   
     <Card sx={{width:340}}>
@@ -43,7 +43,7 @@ export default function Course({course}){
     </Card>
 
     </div>
-   </a>
+   </Link>
   );
 }
 
