@@ -34,7 +34,7 @@ if(result.data === "Success"){
   toast("Successfuly Login")
   
    localStorage.setItem("token",formData.username);
- 
+ sesssionStorage.setItem("token",formData.username);
   navigate("/")
 }
 
