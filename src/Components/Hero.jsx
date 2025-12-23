@@ -5,6 +5,7 @@ import { useState } from "react";
 import Course from "./Course" 
 import axios from 'axios';
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 
 export default function Hero(){
@@ -55,7 +56,7 @@ return <Course course={course} key={1}/>
               
              }
            
-                 <a href="/Courses"> <button color="secondary">Show All Courses</button> </a> 
+                 <Link to="/Courses"> <button color="secondary">Show All Courses</button> </Link> 
                     </div>
   
 
