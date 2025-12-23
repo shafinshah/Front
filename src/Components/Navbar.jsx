@@ -19,7 +19,7 @@ navigate("/Login")
 
 
 
-   const user = localStorage.token;
+   const user = localStorage.getItem("token");
 
  
     return (
