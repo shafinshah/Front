@@ -33,7 +33,7 @@ const navigate= useNavigate();
 if(result.data === "Success"){
   toast("Successfuly Login")
   
-   sessionStorage.setItem("token",formData.username);
+   localStorage.setItem("token",formData.username);
  
   navigate("/")
 }
